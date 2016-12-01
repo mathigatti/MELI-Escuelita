@@ -6,4 +6,4 @@ var current_hour = date.getHours();
 server.on("request",function(req,res) {
 	res.end(JSON.stringify(current_hour)+":"+JSON.stringify(current_minute) + "\n");
 });
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
