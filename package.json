@@ -2,10 +2,10 @@
   "name": "german",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "nodeJS/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodeJS/index.js"
+    "start": "node nodeJS/server.js"
   },
   "author": "",
   "license": "ISC"
