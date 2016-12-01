@@ -7,12 +7,28 @@ h1 {
     text-align: center;
 }
 
-
-p {
-    font-family: verdana;
-    font-size: 20px;
+h3 {
+    color: white;
 }
 
+#back { display: none; }
+
+header{
+
+    text-align: center;
+
+
+}
 header #imagen{
     text-align: center;
+    border-image: blue;
+    border-image-width: 1px;
+}
+
+header #links a {
+    font-size: 18px;
+}
+
+header #links a:hover {
+    font-size: 22px;
 }
