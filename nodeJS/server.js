@@ -12,8 +12,18 @@ server.on("request",function(req,res) {
 	var urlData = url.parse(req.url,true);
 	var path = urlData["pathname"];
 //	var valor=fs.readFileSync(path);
+	try {
+	    // Query the entry
+	    	var data = fs.readFileSync("../public/web1/" + path);
+	        res.end(data);
+	}
+	catch (e) {
+	    console.log("No request handler found for " + path);
+	    res.writeHead(404, {"Content-Type": "text/plain"});
+	    res.write("404 Not found");
+	    res.end();
+	}
 
-	res.end(JSON.stringify(current_hour)+":"+JSON.stringify(current_minute) + "\n" + JSON.stringify(urlData));
 });
 
 server.listen(process.env.PORT || 3000);
