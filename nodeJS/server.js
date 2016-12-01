@@ -14,7 +14,7 @@ server.on("request",function(req,res) {
 //	var valor=fs.readFileSync(path);
 	try {
 	    // Query the entry
-	    	var data = fs.readFileSync("../public/web1/" + path);
+	    	var data = fs.readFileSync("public/web1/" + path);
 	        res.end(data);
 	}
 	catch (e) {
