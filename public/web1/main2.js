@@ -52,7 +52,7 @@ window.onload = function(e){
     var articulo3 = new Articulo(titulo3,contenido3,"id3");
     var articulos = [articulo1, articulo2, articulo3];
     var m = new ManejadorDeArticulos(articulos);
-    document.getElementById('test').innerHTML = m.render();
+    document.getElementById('links').innerHTML = m.render();
 };
 
 
