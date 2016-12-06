@@ -5,3 +5,4 @@ Server which access a Data Base of Clients and prints them at localhost:8080/jso
 It's made with Gin, the golang Framework.
 
 * NodeJS Server
+ running on: https://serene-beyond-91516.herokuapp.com/posts
