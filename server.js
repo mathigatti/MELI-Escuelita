@@ -7,7 +7,7 @@ var server = http.createServer();
 server.on("request",function(req,res) {
 	var date = new Date();
 	var current_minute= date.getMinutes();
-	var current_hour = date.getHours(); 
+	var current_hour = date.getHours();
 
 	var urlData = url.parse(req.url,true);
 	var path = urlData["pathname"];
