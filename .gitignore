@@ -1,3 +1,4 @@
 # Cosas a ignorar
-./node_modules
+node_modules
+nodeJS
 .DS_Store
