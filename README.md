@@ -9,6 +9,6 @@
 
  running on: https://serene-beyond-91516.herokuapp.com/posts
 
-* WebCam Streming Service
+* WebCam Streaming Service
 
  A picture is taken every 0.01 seconds by script.sh, it is uploaded to a mongoDB in mlab by main.js. Then user.js access  periodically to this database and recharge the website with the latest picture.

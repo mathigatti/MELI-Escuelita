@@ -14,7 +14,7 @@ var request = require('request');
 app.engine('mustache', mustacheExpress());
 
 app.set('view engine', 'mustache');
-app.set('views', './public/views/');
+app.set('views', './views/');
 
 var articulos;
 
